@@ -72,7 +72,7 @@ a {
   a:visited {
     color: #add8e6; }
   a:hover {
-    color: rgba(255, 169, 73, 0.5);
+    color: rgba(255, 169, 73, 0.9);
     font-size: 1.5rem;
     transition-duration: 0.6s;
     transition-timing-function: ease-out; }
@@ -81,7 +81,7 @@ a {
 @font-face {
   font-family: 'Unlock', cursive, 'Rock Salt', cursive; }
 .main-header {
-  background: linear-gradient(rgba(255, 255, 255, 0), rgba(128, 128, 128, 0.171), rgba(138, 138, 138, 0.301)), url(../images/background.jpg);
+  background: linear-gradient(rgba(253, 238, 210, 0), rgba(252, 195, 110, 0.171), rgba(255, 189, 113, 0.329)), url(../images/background.jpg);
   text-align: center;
   background-size: cover;
   height: 100vh;
@@ -94,7 +94,7 @@ a {
   line-height: 60px; }
 .main-heading {
   font-size: 5.625rem;
-  color: rgba(255, 255, 255, 0.753);
+  color: rgba(252, 211, 164, 0.753);
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.3;
@@ -103,7 +103,7 @@ a {
   font-size: 5rem;
   line-height: 1.1; }
 .main-title {
-  color: rgba(255, 255, 255, 0.753);
+  color: rgba(252, 211, 164, 0.753);
   font-family: 'Rock Salt', cursive;
   font-size: 1.625rem;
   letter-spacing: .065em;
@@ -134,7 +134,7 @@ a {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  color: aliceblue; }
+  color: rgba(255, 169, 73, 0.9); }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -143,6 +143,11 @@ a {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: #3e8e41; }
+
+.top {
+  font-size: 2.945rem;
+  display: inline-block;
+  line-height: 60px; }
 
 .intro {
   font-size: 1.25em;
@@ -157,8 +162,8 @@ a {
   display: inline-block; }
 
 .arrow {
-  width: 50px;
-  margin-top: 80px; }
+  width: 70px;
+  margin-top: 100px; }
 
 /* Media Queries -------------------- */
 @media (max-width: 1024px) {

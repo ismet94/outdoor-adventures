@@ -7,7 +7,7 @@
 }
 
 .main-header {
-    background: linear-gradient( rgba(255, 255, 255, 0), rgba(128, 128, 128, 0.171), rgba(138, 138, 138, 0.301)), url(../images/background.jpg);
+    background: linear-gradient( rgba(253, 238, 210, 0), rgba(252, 195, 110, 0.171), rgba(255, 189, 113, 0.329)), url(../images/background.jpg);
     text-align: center;
     background-size: cover;
     height: 100vh;
@@ -71,7 +71,7 @@
   
   /* Change color of dropdown links on hover */
   .dropdown-content a:hover {
-      color: aliceblue;
+        color: rgba($color-link-default, .9);
     }
   
   /* Show the dropdown menu on hover */
@@ -80,6 +80,11 @@
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+.top {
+    font-size: 2.945rem;
+    display: inline-block;
+    line-height: 60px;
+}
 
 .intro {
     font-size: 1.25em;
@@ -100,8 +105,8 @@
 // Arrow image icon
 
 .arrow {
-    width: 50px;
-    margin-top: 80px;
+    width: 70px;
+    margin-top: 100px;
 }
 
 
