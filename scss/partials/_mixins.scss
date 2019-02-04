@@ -1,0 +1,13 @@
+// Mixins are one of the most used features of Sass. They let you break CSS down into modular chunks that you can reuse anywhere in your stylesheets. Being able to do this helps us to avoid writing repetitive code.
+
+
+/* Mixins -------------------- */
+
+@mixin center {
+    background-color: rgb(112, 112, 112);
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    width: auto 80% auto;
+    height: 50vh;
+}

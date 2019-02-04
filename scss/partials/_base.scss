@@ -1,0 +1,89 @@
+/* ----------------------------------------------------
+--------------------- Base Styles --------------------- 
+-------------------------------------------------------*/
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: $color-text-base;
+    margin: 0;
+    font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.295);
+    font-family: 'Rock Salt', cursive;
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Hide the navbar 50 px outside of the top view */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+ul {
+    text-align: center;
+    display: inline;
+    padding: 40px;
+}
+
+
+h1,
+h2 {
+    font-family: 'Unlock',
+    cursive;
+}
+
+h2 {
+    @include center;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: $color-text-dark;
+    line-height: 1.2;
+    margin-bottom: 1.7em;
+}
+
+p {
+    @include center;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+/* -------------------------------------------------------
+--------------------- Pseudo-classes --------------------- 
+---------------------------------------------------------*/
+
+a {
+    text-shadow: 0 3px 3px $color-shadow;
+
+    &:link {
+        color: $color-link-default;
+        text-decoration: none;
+        font-size: 1.2rem;
+        
+    }
+
+    &:visited {
+        color: $color-link-visited;
+    }
+
+    &:hover {
+        color: rgba($color-link-default, .5);
+        font-size: 1.5rem;
+        transition-duration: 0.6s;
+        transition-timing-function: ease-out;
+    }
+}
+
+
+
+
+
