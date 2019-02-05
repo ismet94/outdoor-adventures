@@ -3,11 +3,10 @@
 
 /* Mixins -------------------- */
 
-@mixin center {
-    background-color: rgb(112, 112, 112);
+
+@mixin header {
+    padding: 20px;
     text-align: center;
-    vertical-align: middle;
-    text-decoration: none;
-    width: auto 80% auto;
-    height: 50vh;
+    grid-area: header;
+    background-color: $heading-back;
 }

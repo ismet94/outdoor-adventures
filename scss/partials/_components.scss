@@ -11,7 +11,13 @@
     text-align: center;
     background-size: cover;
     height: 100vh;
+    padding: 20px;
+}
+
+.gallery {
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(58, 58, 58), rgb(107, 107, 107));
     text-align: center;
+    background-size: cover;
     padding: 20px;
 }
 
@@ -20,7 +26,7 @@
         font-size: 1.945;
         display: inline-block;
         line-height: 60px;
-        
+    
     }
 
     &-heading {
@@ -55,6 +61,7 @@
 .dropdown-content {
     display: none;
     position: absolute;
+    border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.651);
     min-width: 200px;
     box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.493);
@@ -68,17 +75,16 @@
     text-decoration: none;
     display: block;
   }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
+
+.dropdown-content a:hover {
         color: rgba($color-link-default, .9);
     }
   
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+      display: block;
+    }
   
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  
 
 .top {
     font-size: 2.945rem;
@@ -92,22 +98,96 @@
     color: initial;
 }
 
-// Callout link/button
-
-.callout {
-    font-size: 1.25em;
-    border-bottom: 3px solid;
-    padding: 0 9px 3px;
-    margin-top: 20px;
-    display: inline-block;
-}
 
 // Arrow image icon
 
 .arrow {
-    width: 70px;
-    margin-top: 100px;
+    width: 40px;
+    height: 40px;;
+    margin-top: 80px;
 }
 
+.camp-content {
+        display: grid;
+        margin-top: 0px;
+        padding: 60px;
+        grid-gap: 10px;
+        grid-template-columns: 10fr 10fr ;
+        grid-template-areas: 
+        "header header"
+}
 
+.heading {
+    padding: 20px;
+    text-align: center;
+    grid-area: header;
+    background-color: $heading-back;
+}
 
+.hike-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-areas: 
+    "header2 header2"
+}
+
+.heading2 {
+    padding: 20px;
+    text-align: center;
+    grid-area: header2;
+    background-color: $heading-back;
+}
+
+.canoe-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-areas: 
+    "header3 header3"
+}
+
+.heading3 {
+    padding: 20px;
+    text-align: center;
+    grid-area: header3;
+    background-color: $heading-back;
+}
+
+.fish-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-areas: 
+    "header4 header4"
+}
+
+.heading4 {
+    padding: 20px;
+    text-align: center;
+    grid-area: header4;
+    background-color: $heading-back;
+}
+
+.climb-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-areas: 
+    "header5 header5"
+}
+
+.heading5 {
+    padding: 20px;
+    text-align: center;
+    grid-area: header5;
+    background-color: $heading-back;
+}
