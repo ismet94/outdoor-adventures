@@ -7,7 +7,7 @@
   scroll-behavior: smooth; }
 
 body {
-  background-image: linear-gradient(to right, #fad796, #d4ff85, #fa7979);
+  background-image: linear-gradient(to right, #3b3b3b, #fad96d, #fca35a);
   color: #444444;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
@@ -28,7 +28,8 @@ ul {
 
 h1 {
   font-size: 2.35rem;
-  font-family: 'Unlock', cursive; }
+  font-family: 'Unlock', cursive;
+  text-shadow: 1px 1px 1px black; }
 
 h2 {
   font-family: 'Unlock', cursive; }
@@ -38,6 +39,12 @@ h3 {
   color: #48525c;
   line-height: 1.2;
   margin-bottom: 1.7em; }
+
+p {
+  color: wheat;
+  padding: 20px;
+  background-color: rgba(26, 26, 26, 0.548);
+  border-radius: 10px; }
 
 img {
   box-shadow: 0px 5px 10px #1f1f1f;
@@ -86,7 +93,7 @@ img {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(15, 300px); }
+  grid-template-rows: repeat(15, 210px); }
 
 .item {
   background-size: cover;
@@ -95,7 +102,7 @@ img {
 
 .name {
   grid-column: span 4;
-  grid-row: span 1;
+  grid-row: auto;
   text-align: center; }
 
 .camp1 {
@@ -195,6 +202,10 @@ img {
   grid-row: span 1; }
 
 .climb5 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.contact-heading {
   grid-column: span 2;
   grid-row: span 1; }
 
