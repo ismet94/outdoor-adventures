@@ -18,6 +18,14 @@
     background-image: linear-gradient(rgb(20, 20, 20), rgb(58, 58, 58), rgb(107, 107, 107));
     text-align: center;
     background-size: cover;
+    padding: 40px;
+}
+
+.contact {
+    background: url(../images/contact.jpg);
+    text-align: center;
+    background-size: cover;
+    height: 100vh;
     padding: 20px;
 }
 
@@ -190,4 +198,33 @@
     text-align: center;
     grid-area: header5;
     background-color: $heading-back;
+}
+
+
+table {
+    font-size: 17px;
+    box-shadow: 0px 5px 8px black;
+    padding: 30px;
+    border: 2px solid rgb(172, 140, 0);
+    border-radius: 10px;
+    background-color: rgba(19, 19, 19, 0.753);
+    color: rgb(172, 140, 0);
+}
+
+.contact-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-rows: 10fr 10fr ;
+    grid-template-areas: 
+    "header header"
+}
+
+.heading {
+padding: 20px;
+text-align: center;
+grid-area: header;
+background-color: $heading-back;
 }

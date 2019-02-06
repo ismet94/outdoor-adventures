@@ -57,6 +57,13 @@ img {
 }
 
 
+iframe {
+    box-shadow: 0px 5px 5px black;
+    height: 200px;
+    width: 80%;
+}
+
+
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
@@ -104,15 +111,34 @@ img {
     }
 }
 
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(15,300px);
+}
+
 .item {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.title1 {
+.name {
     grid-column: span 4;
-  
+    grid-row: span 1;
+    text-align: center;
+}
+
+.camp1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.camp2 {
+    grid-column: span 1u;
+    grid-row: span 1;
 }
 
 .camp3 {
@@ -130,8 +156,105 @@ img {
     grid-row: span 2;
 }
 
+.hike1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
 
+.hike2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
 
+.hike3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.hike4 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.hike5 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.canoe {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.canoe2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.canoe3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.canoe4 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.canoe5 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.fish {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.fish2 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.fish3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.fish4 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.fish5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.climb {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.climb2 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.climb3 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.climb4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.climb5 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
 
 
 

@@ -45,6 +45,11 @@ img {
   margin-bottom: 20px;
   border-radius: 10px; }
 
+iframe {
+  box-shadow: 0px 5px 5px black;
+  height: 200px;
+  width: 80%; }
+
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
 ---------------------------------------------------------*/
@@ -77,13 +82,29 @@ img {
     transition-duration: 0.2s;
     -webkit-filter: brightness(130%); }
 
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(15, 300px); }
+
 .item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
-.title1 {
-  grid-column: span 4; }
+.name {
+  grid-column: span 4;
+  grid-row: span 1;
+  text-align: center; }
+
+.camp1 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.camp2 {
+  grid-column: span 1u;
+  grid-row: span 1; }
 
 .camp3 {
   grid-column: span 2;
@@ -96,6 +117,86 @@ img {
 .camp5 {
   grid-column: span 1;
   grid-row: span 2; }
+
+.hike1 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.hike2 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.hike3 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.hike4 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.hike5 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.canoe {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.canoe2 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.canoe3 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.canoe4 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.canoe5 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.fish {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.fish2 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.fish3 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.fish4 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.fish5 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.climb {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.climb2 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.climb3 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.climb4 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.climb5 {
+  grid-column: span 2;
+  grid-row: span 1; }
 
 /* Web Fonts -------------------- */
 @font-face {
@@ -111,6 +212,13 @@ img {
   background-image: linear-gradient(#141414, #3a3a3a, #6b6b6b);
   text-align: center;
   background-size: cover;
+  padding: 40px; }
+
+.contact {
+  background: url(../images/contact.jpg);
+  text-align: center;
+  background-size: cover;
+  height: 100vh;
   padding: 20px; }
 
 .main-menu {
@@ -247,6 +355,30 @@ img {
   padding: 20px;
   text-align: center;
   grid-area: header5;
+  background-color: rgba(255, 162, 0, 0.418); }
+
+table {
+  font-size: 17px;
+  box-shadow: 0px 5px 8px black;
+  padding: 30px;
+  border: 2px solid #ac8c00;
+  border-radius: 10px;
+  background-color: rgba(19, 19, 19, 0.753);
+  color: #ac8c00; }
+
+.contact-content {
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-rows: 10fr 10fr;
+  grid-template-areas: "header header"; }
+
+.heading {
+  padding: 20px;
+  text-align: center;
+  grid-area: header;
   background-color: rgba(255, 162, 0, 0.418); }
 
 /* Mixins -------------------- */
