@@ -1,26 +1,33 @@
-/* Web Fonts -------------------- */
+/* -------------------- Web Fonts -------------------- */
 @import 'https://fonts.googleapis.com/css?family=Noto+Sans+SC|Unlock|Rock+Salt';
 
 @font-face {
-    font-family: 'Unlock',
-    cursive, 'Rock Salt', cursive;
+    font-family: 'Unlock', cursive, 'Rock Salt', cursive;
 }
 
+/* -------------------------------------------------------
+------------ Image sizing and positioning ---------------- 
+---------------------------------------------------------*/
+
+// for the index page
 .main-header {
-    background: linear-gradient( rgba(253, 238, 210, 0), rgba(252, 195, 110, 0.171), rgba(255, 189, 113, 0.329)), url(../images/background.jpg);
+    background: linear-gradient($home-page-gradient), 
+    url(../images/background.jpg);
     text-align: center;
     background-size: cover;
     height: 100vh;
     padding: 20px;
 }
 
+// for the gallery page
 .gallery {
-    background-image: linear-gradient(rgb(20, 20, 20), rgb(58, 58, 58), rgb(107, 107, 107));
+    background-image: linear-gradient($gallery-page-gradient);
     text-align: center;
     background-size: cover;
     padding: 40px;
 }
 
+// for the contact page
 .contact {
     background: url(../images/contact.jpg);
     text-align: center;
@@ -29,14 +36,19 @@
     padding: 20px;
 }
 
+/* -------------------------------------------------------
+------------------- Headings & Titles -------------------- 
+---------------------------------------------------------*/
+
+// this ensures that all the headings and secondary titles has proper positioning and sizing is correct
 .main {
     &-menu {
         font-size: 1.945;
         display: inline-block;
         line-height: 60px;
-    
     }
 
+    // headings properties
     &-heading {
         font-size: 5.625rem;
         color: $color-text-light;
@@ -47,8 +59,16 @@
         margin: 12px 0 0;
         font-size: 5rem;
         line-height: 1.1;
+        // an animation added to the heading
+        animation: animate ease-out 2s;
+
+        @keyframes animate {
+            from {font-size: 0.2rem;}
+            to {font-size: 5rem;}
+        }
     }
 
+    // titles properties
     &-title {
         color: $color-text-light;
         font-family: 'Rock Salt', cursive;
@@ -59,13 +79,27 @@
         border-bottom: 2px solid;
         padding-top: 10%;
         border: none;
+        // an animation added to the title
+        animation: animate2 ease-out 1s;
+
+        @keyframes animate2 {
+            from {font-size: 0.2rem;}
+            to {font-size: 1.625rem;}
+        }
     }
 }
 
+/* -------------------------------------------------------
+--------------------- Drop Down Menu --------------------- 
+---------------------------------------------------------*/
+
+// This ensure that my drop down menu shows once hovered over the link
 .dropdown {
     position: relative;
     display: inline-block;
 }
+
+// this styles the drop down box
 .dropdown-content {
     display: none;
     position: absolute;
@@ -74,172 +108,45 @@
     min-width: 200px;
     box-shadow: 0px 13px 18px 0px rgba(0, 0, 0, 0.493);
     z-index: 1;
-  }
+}
 
-  /* Links inside the dropdown */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+// this ensure that the links are spaced and coloured properly
 .dropdown-content a {
     color: $color-link-visited;
     padding: 8px 12px;
     text-decoration: none;
     display: block;
-  }
+}
 
+// once hovered over the text colour would change
 .dropdown-content a:hover {
         color: rgba($color-link-default, .9);
-    }
-  
-.dropdown:hover .dropdown-content {
-      display: block;
-    }
-  
-  
+}
 
+/* ------------------ End of drop down menu ---------------------*/
+
+// this is a jump link size and styling
 .top {
     font-size: 2.945rem;
     display: inline-block;
     line-height: 60px;
 }
 
+// paragraph styling
 .intro {
     font-size: 1.25em;
     line-height: 1.6;
 }
 
-
 // Arrow image icon
-
 .arrow {
     width: 40px;
-    height: 40px;;
+    height: 40px;
     margin-top: 80px;
 }
 
-.camp-content {
-        background-image: url(../images/camping.jpg);
-        background-attachment: fixed;
-        background-size: cover;
-        display: grid;
-        margin-top: 0px;
-        padding: 60px;
-        grid-gap: 10px;
-        grid-template-columns: 10fr 10fr ;
-        grid-template-areas: 
-        "header header"
-}
 
-.heading {
-    padding: 20px;
-    text-align: center;
-    grid-area: header;
-    background-color: $heading-back;
-}
-
-.hike-content {
-    background-image: url(../images/hiking.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    margin-top: 0px;
-    padding: 60px;
-    grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
-    grid-template-areas: 
-    "header2 header2"
-}
-
-.heading2 {
-    padding: 20px;
-    text-align: center;
-    grid-area: header2;
-    background-color: $heading-back;
-}
-
-.canoe-content {
-    background-image: url(../images/canoeing.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    margin-top: 0px;
-    padding: 60px;
-    grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
-    grid-template-areas: 
-    "header3 header3"
-}
-
-.heading3 {
-    padding: 20px;
-    text-align: center;
-    grid-area: header3;
-    background-color: $heading-back;
-}
-
-.fish-content {
-    background-image: url(../images/fishing.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    margin-top: 0px;
-    padding: 60px;
-    grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
-    grid-template-areas: 
-    "header4 header4"
-}
-
-.heading4 {
-    padding: 20px;
-    text-align: center;
-    grid-area: header4;
-    background-color: $heading-back;
-}
-
-.climb-content {
-    background-image: url(../images/climbing.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    display: grid;
-    margin-top: 0px;
-    padding: 60px;
-    grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
-    grid-template-areas: 
-    "header5 header5"
-}
-
-.heading5 {
-    padding: 20px;
-    text-align: center;
-    grid-area: header5;
-    background-color: $heading-back;
-}
-
-
-table {
-    padding-top: 40px;
-    font-size: 17px;
-    box-shadow: 0px 5px 8px black;
-    padding: 30px;
-    border: 2px solid rgb(172, 140, 0);
-    border-radius: 10px;
-    background-color: rgba(19, 19, 19, 0.753);
-    color: rgb(172, 140, 0);
-}
-
-.contact-content {
-    display: grid;
-    margin-top: 0px;
-    padding: 60px;
-    grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
-    grid-template-rows: 10fr 10fr ;
-    grid-template-areas: 
-    "header header"
-}
-
-.heading {
-padding: 20px;
-text-align: center;
-grid-area: header;
-background-color: $heading-back;
-}

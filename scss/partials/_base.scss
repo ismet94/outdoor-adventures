@@ -2,37 +2,42 @@
 --------------------- Base Styles --------------------- 
 -----------------------------------------------------*/
 
+// scrolling effects and box sizing
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
 
+// used to style the body of the website with specific fonts inserted
 body {
-    background-image: linear-gradient(to right, rgb(59, 59, 59), rgb(250, 217, 109), rgb(252, 163, 90));
+    background-image: linear-gradient(to right, $body-gradient);
     color: $color-text-base;
     margin: 0;
     font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+// navbar includes styling and positioning of the website
 nav {
     background-color: rgba(0, 0, 0, 0.473);
     font-family: 'Rock Salt', cursive;
     position: fixed;
     top: 0px; 
-    width: 97%; 
+    width: 100%; 
     transition: top 0.3s; 
     border-radius: 10px;
+    text-align: center;
 }
 
+// each ul tag in the navbar is spaced out and position
 ul {
     text-align: center;
     display: inline;
     padding: 40px;
 }
 
-
+// different headings used to style the website
 h1 {
-    font-size: 2.35rem;
+    font-size: 2.55rem;
     font-family: 'Unlock', cursive;
     text-shadow: 1px 1px 1px black;
 }
@@ -50,26 +55,39 @@ h3 {
 }
 
 p {
-    color: wheat;
+    color: $color-text-light;
     padding: 20px;
-    background-color: rgba(26, 26, 26, 0.548);
+    background-color: rgba(26, 26, 26, 0.685);
     border-radius: 10px;
 }
 
-img {
-    box-shadow: 0px 5px 10px rgb(31, 31, 31);
-    max-width: 100%;
-    margin-bottom: 20px;
+// Styles my table to fit in with the website
+table {
+    padding-top: 40px;
+    font-size: 17px;
+    box-shadow: 0px 5px 8px $black;
+    padding: 30px;
+    border: 2px solid $color-prim;
     border-radius: 10px;
+    background-color: rgba(19, 19, 19, 0.753);
+    color: $yellow-orange;
 }
 
-
+// the iframe was used for the google maps 
 iframe {
     box-shadow: 0px 5px 5px black;
     height: 200px;
-    width: 80%;
+    width: 95%;
 }
 
+// this styles my form for the contact form
+select, option, input, textarea {
+    background-color: rgba(0, 0, 0, 0.493);
+    color: $yellow-orange;
+    border: 2px solid;
+    border-radius: 5px;
+    box-shadow: 0px 5px 5px black;
+}
 
 /* -------------------------------------------------------
 --------------------- Pseudo-classes --------------------- 
@@ -96,7 +114,12 @@ a {
         transition-timing-function: ease-out;
     }
 }
-    
+
+p:hover {
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.2s;
+    background-color: rgba(26, 26, 26, 0.808);
+}
 
 .container {
     display: grid;
@@ -106,10 +129,14 @@ a {
     
 }
 
+// Image transitions and hovering
 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    box-shadow: 0px 5px 10px rgb(31, 31, 31);
+    max-width: 100%;
+    border-radius: 10px;
 
     &:hover {
         transition-timing-function: ease-in-out;
@@ -117,158 +144,3 @@ img {
         -webkit-filter: brightness(130%);
     }
 }
-
-
-.container {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(15,210px);
-}
-
-.item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.name {
-    grid-column: span 4;
-    grid-row: auto;
-    text-align: center;
-}
-
-.camp1 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.camp2 {
-    grid-column: span 1u;
-    grid-row: span 1;
-}
-
-.camp3 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.camp4 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.camp5 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.hike1 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.hike2 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.hike3 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.hike4 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.hike5 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.canoe {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.canoe2 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.canoe3 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.canoe4 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.canoe5 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.fish {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.fish2 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.fish3 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.fish4 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.fish5 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.climb {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.climb2 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.climb3 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.climb4 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.climb5 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.contact-heading {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-
-
-
-

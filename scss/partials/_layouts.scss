@@ -1,0 +1,185 @@
+/* -------------------------------------------------------
+----------------------- Index Page ----------------------- 
+---------------------------------------------------------*/
+
+// Each section has a grid template to even out the website
+// camping section
+.camp-content {
+    background-image: url(../images/camping.jpg);
+    @include home;
+    grid-template-areas: 
+        "header header"
+}
+
+.heading {
+    @include home-head;
+    grid-area: header;
+}
+
+// hiking section
+.hike-content {
+    background-image: url(../images/hiking.jpg);
+    @include home;
+    grid-template-areas: 
+            "header2 header2"
+}
+
+.heading2 {
+    @include home-head;
+    grid-area: header2;
+}
+
+// canoeing section
+.canoe-content {
+    background-image: url(../images/canoeing.jpg);
+    @include home;
+    grid-template-areas: 
+        "header3 header3"
+}
+
+.heading3 {
+    @include home-head;
+    grid-area: header3;
+}
+
+// fishing section
+.fish-content {
+    background-image: url(../images/fishing.jpg);
+    @include home;
+    grid-template-areas: 
+        "header4 header4"
+}
+
+.heading4 {
+    @include home-head;
+    grid-area: header4;
+}
+
+// climbing section
+.climb-content {
+    background-image: url(../images/climbing.jpg);
+    @include home;
+    grid-template-areas: 
+        "header5 header5"
+}
+
+.heading5 {
+    @include home-head;
+    grid-area: header5;
+}
+
+/* -------------------------------------------------------
+---------------------- Gallery Page ---------------------- 
+---------------------------------------------------------*/
+
+// This ensures that the grid format sets the rows and columns
+.container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(10,250px);
+}
+
+// the item class makes all the image cover the cell in which the image is inserted
+.item {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+// the name class for the totop
+.name {
+    grid-column: span 4;
+    text-align: center;
+}
+
+// below is where only certain images are spaned across a column or a row
+.camp1 {
+    grid-column: span 2;
+}
+
+.camp3 {
+    grid-column: span 2;
+}
+
+.camp4 {
+    grid-column: span 2;
+}
+
+.camp5 {
+    grid-row: span 2;
+}
+
+.hike2 {
+    grid-column: span 2;
+}
+
+.hike4 {
+    grid-row: span 2;
+}
+
+.hike5 {
+    grid-column: span 2;
+}
+
+.canoe2 {
+    grid-column: span 2;
+}
+
+.canoe4 {
+    grid-column: span 2;
+}
+
+.canoe5 {
+    grid-row: span 2;
+}
+
+.fish2 {
+    grid-column: span 2;
+}
+
+.fish3 {
+    grid-row: span 2;
+}
+
+.fish4 {
+    grid-column: span 2;
+}
+
+.climb {
+    grid-column: span 2;
+}
+
+.climb3 {
+    grid-row: span 2;
+}
+
+.climb5 {
+    grid-column: span 2;
+}
+
+/* -------------------------------------------------------
+---------------------- Contact Page ---------------------- 
+---------------------------------------------------------*/
+
+.contact-content {
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+    grid-template-areas: 
+        "header header"
+}
+
+.heading {
+    @include home-head;
+    grid-area: header;
+    background-color: $heading-back;
+}
+
+.contact-heading {
+    grid-column: span 2;
+}
+
+/* ------------------ End of Contact Page ---------------------*/

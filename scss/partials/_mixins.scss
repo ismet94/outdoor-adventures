@@ -1,8 +1,5 @@
-// Mixins are one of the most used features of Sass. They let you break CSS down into modular chunks that you can reuse anywhere in your stylesheets. Being able to do this helps us to avoid writing repetitive code.
 
-
-/* Mixins -------------------- */
-
+/* ------------------ Mixins -------------------- */
 
 @mixin header {
     padding: 20px;
@@ -10,3 +7,21 @@
     grid-area: header;
     background-color: $heading-back;
 }
+
+@mixin home {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 60px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+}
+
+@mixin home-head {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: $heading-back;
+}
+ 

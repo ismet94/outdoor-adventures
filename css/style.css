@@ -1,212 +1,83 @@
-/* Mixins -------------------- */
-/*-----------------------------------------------------
---------------------- Base Styles --------------------- 
------------------------------------------------------*/
-* {
-  box-sizing: border-box;
-  scroll-behavior: smooth; }
+/*
+Error: Undefined mixin 'home'.
+        on line 9 of scss/partials/_layouts.scss, in `home'
+        from line 9 of scss/partials/_layouts.scss
+        from line 4 of scss/style.scss
 
-body {
-  background-image: linear-gradient(to right, #3b3b3b, #fad96d, #fca35a);
-  color: #444444;
-  margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+4:         "partials/layouts",
+5:         "partials/mixins",
+6:         "partials/base";
 
-nav {
-  background-color: rgba(0, 0, 0, 0.473);
-  font-family: 'Rock Salt', cursive;
-  position: fixed;
-  top: 0px;
-  width: 97%;
-  transition: top 0.3s;
-  border-radius: 10px; }
-
-ul {
-  text-align: center;
-  display: inline;
-  padding: 40px; }
-
-h1 {
-  font-size: 2.35rem;
-  font-family: 'Unlock', cursive;
-  text-shadow: 1px 1px 1px black; }
-
-h2 {
-  font-family: 'Unlock', cursive; }
-
-h3 {
-  font-size: 1.25em;
-  color: #48525c;
-  line-height: 1.2;
-  margin-bottom: 1.7em; }
-
-p {
-  color: wheat;
-  padding: 20px;
-  background-color: rgba(26, 26, 26, 0.548);
-  border-radius: 10px; }
-
-img {
-  box-shadow: 0px 5px 10px #1f1f1f;
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px; }
-
-iframe {
-  box-shadow: 0px 5px 5px black;
-  height: 200px;
-  width: 80%; }
-
-/* -------------------------------------------------------
---------------------- Pseudo-classes --------------------- 
----------------------------------------------------------*/
-a {
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8); }
-  a:link {
-    color: #ffa949;
-    text-decoration: none;
-    font-size: 1.2rem; }
-  a:visited {
-    color: #4295b1; }
-  a:hover {
-    color: rgba(255, 169, 73, 0.9);
-    font-size: 1.5rem;
-    transition-duration: 0.6s;
-    transition-timing-function: ease-out; }
-
-.container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 300px); }
-
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-  img:hover {
-    transition-timing-function: ease-in-out;
-    transition-duration: 0.2s;
-    -webkit-filter: brightness(130%); }
-
-.container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(15, 210px); }
-
-.item {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-
-.name {
-  grid-column: span 4;
-  grid-row: auto;
-  text-align: center; }
-
-.camp1 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.camp2 {
-  grid-column: span 1u;
-  grid-row: span 1; }
-
-.camp3 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.camp4 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.camp5 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.hike1 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.hike2 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.hike3 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.hike4 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.hike5 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.canoe {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.canoe2 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.canoe3 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.canoe4 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.canoe5 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.fish {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.fish2 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.fish3 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.fish4 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.fish5 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.climb {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.climb2 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.climb3 {
-  grid-column: span 1;
-  grid-row: span 2; }
-
-.climb4 {
-  grid-column: span 1;
-  grid-row: span 1; }
-
-.climb5 {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-.contact-heading {
-  grid-column: span 2;
-  grid-row: span 1; }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+scss/partials/_layouts.scss:9:in `home'
+scss/partials/_layouts.scss:9
+scss/style.scss:4
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'home'.\A         on line 9 of scss/partials/_layouts.scss, in `home'\A         from line 9 of scss/partials/_layouts.scss\A         from line 4 of scss/style.scss\A \A 4:         \"partials/layouts\",\A 5:         \"partials/mixins\",\A 6:         \"partials/base\";"; }

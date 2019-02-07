@@ -1,29 +1,28 @@
 // Descriptive color variables
 
-$white : rgba(252, 211, 164, 0.753);
+$white : rgba(253, 184, 106, 0.753);
 $black : #000;
 $grey : #444444;
 $nav : #2a2a2a2f;
-$regent-st-blue : #4295b1;
+$color-link-visited : #4295b1;
 $river-bed : #48525c;
 $yellow-orange : #ffa949;
+$color-link-default : #ffa135;
 $color-text-dark: #2a2a2a;
-$heading-back: rgba(255, 162, 0, 0.418);
+$heading-back: rgba(255, 162, 0, 0.603);
 
 // Functional color variables
 
 $color-prim : $yellow-orange;
-$color-sec : $river-bed;
-
 $color-text-light : $white;
 $color-text-base : $grey;
-$color-text-dark : $river-bed;
-
 $color-border-light : lighten($grey, 35%);
 $color-border-dark : $yellow-orange;
-
-$color-link-default : $yellow-orange;
-$color-link-visited : $regent-st-blue;
-
 $color-shadow : rgba($black, .8);
 $color-body : $white;
+
+// gradient colours
+
+$home-page-gradient :  rgba(253, 238, 210, 0), rgba(252, 195, 110, 0.171), rgba(255, 189, 113, 0.329);
+$gallery-page-gradient : rgb(20, 20, 20), rgb(58, 58, 58), rgb(107, 107, 107);
+$body-gradient : rgb(59, 59, 59), rgb(250, 217, 109), rgb(252, 163, 90);
