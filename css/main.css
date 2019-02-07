@@ -59,7 +59,7 @@ table {
 
 iframe {
   box-shadow: 0px 5px 5px black;
-  height: 200px;
+  height: 215px;
   width: 95%; }
 
 select, option, input, textarea {
@@ -90,12 +90,6 @@ p:hover {
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
   background-color: rgba(26, 26, 26, 0.808); }
-
-.container {
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 300px); }
 
 img {
   width: 100%;
@@ -130,7 +124,6 @@ img {
 
 .contact {
   background: url(../images/contact.jpg);
-  text-align: center;
   background-size: cover;
   height: 100vh;
   padding: 20px; }
@@ -397,6 +390,7 @@ img {
   background-color: rgba(255, 162, 0, 0.603); }
 
 .contact-heading {
+  text-align: center;
   grid-column: span 2; }
 
 /* ------------------ End of Contact Page ---------------------*/
