@@ -1,91 +1,373 @@
-/* Media Queries -------------------- */
+/* -------------------------------------------------------
+-------------------- Mobile Responsive ------------------- 
+---------------------------------------------------------*/
 
+@media only screen 
+and (min-device-width: 200px) 
+and (max-device-width: 767px) 
+and (-webkit-min-device-pixel-ratio: 1) {
 
-// How to Use CSS to Resize Your (Foreground) Images While Preserving Their Aspect Ratio
-// The simplest and most painless way to quickly get all your existing foreground pictures to fit a mobile screen is to resize them with CSS. This can easily be done with the following rules.
+/* ------------------ Index Page --------------------- */
 
-// img {
-//     width: auto;
-//     max-width: 100%;
-//     height: auto;
-// }
-
-// How to Use Mobile Queries to Deliver Responsive Background Images
-
-// @media (max-width: 480px) {
-//     #picblock {
-//         background-image: url(mobile.png);
-//         background-repeat: no-repeat;
-//         background-size: contain;
-//     }
-// }
-
-
-@media (max-width: 1024px) {
-
-    .primary-content,
-    .secondary-content {
-        width: 90%;
-    }
-
-    .wildlife {
-        padding: 10% 12%;
-        margin: 50px 0 20px;
-    }
-}
-
-@media (max-width: 794px) {
-
-    .primary-content,
-    .secondary-content {
-        width: 100%;
-        padding: 20px;
-        border-top: none;
-    }
-img {
-    
-    height: auto;
-    width: auto;
-    padding: 10%;
-    border-radius: 50%;
-}
-
-    p {
-        font-size: 1.3125em;
-        text-align: left;
-        text-transform: none;
-    }
-
-    .main-header {
-        max-height: 380px;
-        padding: 50px 25px 0;
-    }
-
-    .main-title {
-        font-size: 1.3rem;
-        border: none;
-    }
-
-    .main-heading {
-        font-size: 5rem;
-        line-height: 1.1;
-    }
-
-    .arrow {
-        display: none;
-    }
-
-    .intro {
+.main {
+    &-menu {
         font-size: 1rem;
+        display: block;
+        line-height: 40px;
     }
 
-    .resorts,
-    .tips {
-        float: none;
-        width: 100%;
+    &-heading {
+        line-height: 1;
+        margin: 0px 0 0;
+        font-size: 3rem;
+        line-height: 1.1;
+        animation: animate ease-out 2s;
+
+        @keyframes animate {
+            from {font-size: 0.2rem;}
+            to {font-size: 3rem;}
+        }
     }
 
-    .main-footer {
-        padding: 20px 0;
+    &-title {
+        font-size: 1.6rem;
+        font-weight: 200;
+        border-bottom: 2px solid;
+        padding-top: 0px;
+        // an animation added to the title
+        animation: animate2 ease-out 1s;
+
+        @keyframes animate2 {
+            from {font-size: 0.2rem;}
+            to {font-size: 1.6rem;}
+        }
     }
+}
+.camp-content {
+    @include home-cell;
+    grid-template-areas: 
+        "header"
+}
+    
+.hike-content {
+    @include home-cell;
+    grid-template-areas: 
+            "header2"
+}
+
+.canoe-content {
+    @include home-cell;
+    grid-template-areas: 
+        "header3"
+}
+
+.fish-content {
+    @include home-cell;
+    grid-template-areas: 
+        "header4"
+}
+
+.climb-content {
+    @include home-cell;
+        grid-template-areas: 
+            "header5"
+}
+
+/* ------------------------- Gallery Page --------------------*/
+
+.gallery {
+    background-image: linear-gradient($gallery-page-gradient);
+    padding: 10px;
+}
+
+.container {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(25,180px);
+}
+
+.name {
+    grid-column: span 1;
+    text-align: center;
+}
+
+.camp   {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.camp2 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.camp3 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.camp4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.camp5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hike    {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hike2 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hike3 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hike4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.hike5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.canoe   {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.canoe2 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.canoe3 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.canoe4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.canoe5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.fish     {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.fish2 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.fish3 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.fish4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.fish5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.climb    {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.climb2 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.climb3 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.climb4 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+.climb5 {
+    grid-row: span 1;
+    grid-column: span 1;
+}
+
+/* ----------------------- Contact Page --------------------*/
+
+.gallery {
+    text-align: center;
+    background-size: cover;
+    padding: 10px;
+}
+
+.contact-content {
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: auto ;
+    grid-template-areas: 
+        "header"
+}
+
+.contact {
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px;
+}
+
+.heading {
+    @include home-head;
+    grid-area: header;
+    background-color: $heading-back;
+}
+
+.contact-heading {
+    display: grid;
+    grid-column: span 1;
+}
+
+.footer {
+    grid-column: span 1;
+}
+
+nav {
+    display: inline-block;
+    position: static;
+}
+
+table {
+    padding-top: 20px;
+    font-size: 15px;
+    box-shadow: 0px 5px 8px $black;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+iframe {
+    height: 340px;
+    width: 250px;
+}
+}
+
+/* -------------------------------------------------------
+-------------------- Tablet Responsive ------------------- 
+---------------------------------------------------------*/
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+/* ------------------ Index Page --------------------- */
+
+.main {
+    &-menu {
+        font-size: 1rem;
+        display: inline-block;
+        line-height: 40px;
+    }
+
+    &-heading {
+        line-height: 1;
+        margin: 30px 0 0;
+        font-size: 3rem;
+        line-height: 1.1;
+        animation: animate ease-out 2s;
+
+        @keyframes animate {
+            from {font-size: 0.2rem;}
+            to {font-size: 3rem;}
+        }
+    }
+
+    &-title {
+         font-size: 1.6rem;
+         font-weight: 200;
+         border-bottom: 2px solid;
+         padding-top: 30px;
+         text-decoration-style: none;
+         // an animation added to the title
+         animation: animate2 ease-out 1s;
+ 
+         @keyframes animate2 {
+             from {font-size: 0.2rem;}
+             to {font-size: 1.6rem;}
+         }
+     }
+}
+
+.camp-content {
+    @include home-tab;
+}
+
+.hike-content {
+    @include home-tab;
+}
+
+.canoe-content {
+    @include home-tab;
+}
+
+.fish-content {
+    @include home-tab;
+}
+
+.climb-content {
+    @include home-tab;
+}
+
+/* ------------------ Contact Page --------------------- */
+
+.contact-content {
+    padding: 20px;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+    
+}
+
+.heading {
+    text-align: center;
+    display: grid;
+    @include home-head;
+    grid-area: header;
+    background-color: $heading-back;
+    grid-template-rows: span 1;
+}
+
+.contact-heading {
+    text-align: center;
+    grid-column: span 1;
+}
+
+.footer {
+    grid-column: span 1;
+}
+
 }

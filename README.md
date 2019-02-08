@@ -1,11 +1,7 @@
 # outdoor-adventures
 
-A substantial amount of researching used; books and going as far as using the github articles getting to know every function of constructing a powerful yet elegant website. Detailing every step, word for word. 
-I came up with a solution to use a one pager website rather than using multiple pages. In this project my folder structure needed a javascript folder other than having images and the CSS folder. My ojective for doing this was so that I could in-corporate atleast one self-taught javascript function from there my one pager with smooth scrolling transitions was compiled.
-
-The background was inspired from trees of life where as you scroll down you will find the roots of my life this is where my photoshop skills came in handy to create a background that has a purpose to my  website. The coding layout was kept crisp this means that you could follow and easily know where you are as each divider falls under the body structure. Consistant lines forms patterns in the structure and proper spacing was used between dividers so the indivudual can be guided without scrolling to the top again.
-
-By staying on the safe side all work was pushed into the github remote server so that when working on another machine it would be accessed and cloned to the desired location. From their a consistant amount of work hours was put into this project and  from this more is yet to come.
+The task was given in a short period of time in order to challenge us to complete the same as in a working enviroment.
+The challenge was more of the sass that I recently learned. Implementing this into the project helped me conquer my outcome.
 
 ## Setting up my workspace
 
@@ -87,19 +83,43 @@ Tools:
 ### Changelog
 
 2019-02-01:
-- 
+- Project Layout
+- Wireframe
+- Folder structure
+- Research for each section
+- Selected images
+
 2019-02-02
-- 
+- Implemented research
+- Inserted pictures
+- Created sections
+
 2019-02-04
-- 
+- Structured the code
+- created variables and colour scheme
+
 2019-02-05
-- 
+- Removed some code
+- Implemented colours
+- worked on form
+
 2019-02-06
-- 
+- Implemented new ideas
+- Added backgrounds
+- Created animations
+
 2019-02-07
-- 
+- Sorting of code
+- Commenting
+- Responsiveness
+- Cleaning of code from redundancy
+
 2019-02-08
-- 
+- Responsiveness
+- Readme Update
+- Clean Code
+- Checklist
+- Submit Project
 
 ## Contributors
 

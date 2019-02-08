@@ -167,7 +167,7 @@
     margin-top: 0px;
     padding: 60px;
     grid-gap: 10px;
-    grid-template-columns: 10fr 10fr ;
+    grid-template-columns: 2fr 2fr ;
     grid-template-areas: 
         "header header"
 }
@@ -180,6 +180,10 @@
 
 .contact-heading {
     text-align: center;
+    grid-column: span 2;
+}
+
+.footer {
     grid-column: span 2;
 }
 

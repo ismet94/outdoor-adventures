@@ -24,4 +24,28 @@
     text-align: center;
     background-color: $heading-back;
 }
- 
+
+
+/* ----------------- Responsive Mixins Mobile ---------------*/
+
+@mixin home-cell {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+}
+
+/* ----------------- Responsive Mixins Tablet ---------------*/
+
+@mixin home-tab {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr ;
+}
