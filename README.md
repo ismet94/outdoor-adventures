@@ -1,7 +1,9 @@
 # outdoor-adventures
 
-The task was given in a short period of time in order to challenge us to complete the same as in a working enviroment.
-The challenge was more of the sass that I recently learned. Implementing this into the project helped me conquer my outcome.
+Outdoor Adventures Cape Town is aimed at main destination locations in and around the Western Cape Province. Local is lekker so to keep it here other than overseas destinations made me choose my colour scheme. A more African themed website helped me to colour and style my website.
+
+The task was given in a short period of time in order to challenge us to complete the same as in a working enviroment. The more challenging part was implementing sass into the website as this
+
 
 ## Setting up my workspace
 
@@ -120,6 +122,11 @@ Tools:
 - Clean Code
 - Checklist
 - Submit Project
+
+2019-03-19
+- Began changes on the website for all the tweaks
+- Made Navbar consistent throughout the website
+
 
 ## Contributors
 

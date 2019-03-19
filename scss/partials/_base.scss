@@ -149,6 +149,7 @@ img {
     &:hover {
         transition-timing-function: ease-in-out;
         transition-duration: 0.2s;
-        -webkit-filter: brightness(130%);
+        filter: brightness(130%);
+
     }
 }
