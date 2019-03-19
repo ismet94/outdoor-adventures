@@ -8,7 +8,7 @@
     background-image:  url(../images/camping.jpg);
     @include home-section;
     grid-template-areas: 
-        "header1 header1"
+        "header header"
 }
 
 .heading {
@@ -78,7 +78,7 @@
     display: grid;
     grid-gap: 10px;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(10,290px);
 }
 
 // the item class makes all the image cover the cell in which the image is inserted
@@ -93,6 +93,13 @@
     background-position: center;
     background-repeat: no-repeat;
 }
+
+.item:hover {
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        filter: brightness(130%);
+    }
+
 
 // the name class for the totop
 .name {

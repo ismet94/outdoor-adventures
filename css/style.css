@@ -1,83 +1,649 @@
-/*
-Error: Undefined mixin 'home'.
-        on line 9 of scss/partials/_layouts.scss, in `home'
-        from line 9 of scss/partials/_layouts.scss
-        from line 4 of scss/style.scss
+/* ------------------ Mixins -------------------- */
+/* ----------------- Responsive Mixins Mobile ---------------*/
+/* ----------------- Responsive Mixins Tablet ---------------*/
+/* -------------------------------------------------------
+----------------------- Index Page ----------------------- 
+---------------------------------------------------------*/
+.camp-content {
+  background-image: url(../images/camping.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-areas: "header header"; }
 
-4:         "partials/layouts",
-5:         "partials/mixins",
-6:         "partials/base";
+.heading {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header1; }
 
-Backtrace:
-scss/partials/_layouts.scss:9:in `home'
-scss/partials/_layouts.scss:9
-scss/style.scss:4
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block (2 levels) in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:325:in `block in visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `block in with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:88:in `with_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:322:in `visit_import'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-3.7.3/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby26-x64/lib/ruby/gems/2.6.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined mixin 'home'.\A         on line 9 of scss/partials/_layouts.scss, in `home'\A         from line 9 of scss/partials/_layouts.scss\A         from line 4 of scss/style.scss\A \A 4:         \"partials/layouts\",\A 5:         \"partials/mixins\",\A 6:         \"partials/base\";"; }
+.hike-content {
+  background-image: url(../images/hiking.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-areas: "header2 header2"; }
+
+.heading2 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header2; }
+
+.canoe-content {
+  background-image: url(../images/canoeing.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-areas: "header3 header3"; }
+
+.heading3 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header3; }
+
+.fish-content {
+  background-image: url(../images/fishing.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-areas: "header4 header4"; }
+
+.heading4 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header4; }
+
+.climb-content {
+  background-image: url(../images/climbing.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 10fr 10fr;
+  grid-template-areas: "header5 header5"; }
+
+.heading5 {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header5; }
+
+/* -------------------------------------------------------
+---------------------- Gallery Page ---------------------- 
+---------------------------------------------------------*/
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(10, 290px); }
+
+.item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 0px 5px 10px #1f1f1f;
+  max-width: 100%;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.item:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  filter: brightness(130%); }
+
+.name {
+  grid-column: span 4;
+  text-align: center; }
+
+.camp1 {
+  grid-column: span 2; }
+
+.camp3 {
+  grid-column: span 2; }
+
+.camp4 {
+  grid-column: span 2; }
+
+.camp5 {
+  grid-row: span 2; }
+
+.hike2 {
+  grid-column: span 2; }
+
+.hike4 {
+  grid-row: span 2; }
+
+.hike5 {
+  grid-column: span 2; }
+
+.canoe2 {
+  grid-column: span 2; }
+
+.canoe4 {
+  grid-column: span 2; }
+
+.canoe5 {
+  grid-row: span 2; }
+
+.fish2 {
+  grid-column: span 2; }
+
+.fish3 {
+  grid-row: span 2; }
+
+.fish4 {
+  grid-column: span 2; }
+
+.climb {
+  grid-column: span 2; }
+
+.climb3 {
+  grid-row: span 2; }
+
+.climb5 {
+  grid-column: span 2; }
+
+/* -------------------------------------------------------
+---------------------- Contact Page ---------------------- 
+---------------------------------------------------------*/
+.contact-content {
+  display: grid;
+  margin-top: 0px;
+  padding: 60px;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: "header header"; }
+
+.heading {
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  background-color: rgba(255, 162, 0, 0.603);
+  grid-area: header;
+  background-color: rgba(255, 162, 0, 0.603); }
+
+.contact-heading {
+  text-align: center;
+  grid-column: span 2; }
+
+.footer {
+  grid-column: span 2; }
+
+/* ------------------ End of Contact Page ---------------------*/
+/*-----------------------------------------------------
+--------------------- Base Styles --------------------- 
+-----------------------------------------------------*/
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+body {
+  background-image: linear-gradient(to right, #3b3b3b, #fad96d, #fca35a);
+  color: #444444;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.473);
+  font-family: 'Rock Salt', cursive;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  transition: top 0.3s;
+  border-radius: 10px;
+  text-align: center; }
+
+ul {
+  text-align: center;
+  display: inline;
+  padding: 40px; }
+
+h1 {
+  font-size: 2.55rem;
+  font-family: 'Unlock', cursive;
+  text-shadow: 1px 1px 1px black; }
+
+h2 {
+  font-family: 'Unlock', cursive; }
+
+h3 {
+  font-size: 1.25em;
+  color: #2a2a2a;
+  line-height: 1.2;
+  margin-bottom: 1.7em; }
+
+p {
+  color: rgba(253, 184, 106, 0.753);
+  padding: 20px;
+  background-color: rgba(26, 26, 26, 0.685);
+  border-radius: 10px; }
+
+table {
+  padding-top: 40px;
+  font-size: 17px;
+  box-shadow: 0px 5px 8px #000;
+  padding: 30px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(19, 19, 19, 0.753);
+  color: #ffa949; }
+
+iframe {
+  box-shadow: 0px 5px 4px black;
+  height: 340px;
+  width: 370px; }
+
+select, option, input {
+  background-color: rgba(0, 0, 0, 0.493);
+  color: #ffa949;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px black;
+  width: 300px;
+  height: 40px;
+  margin: 5px; }
+
+textarea {
+  background-color: rgba(0, 0, 0, 0.493);
+  color: #ffa949;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 2px 3px black;
+  width: 350px; }
+
+/* -------------------------------------------------------
+--------------------- Pseudo-classes --------------------- 
+---------------------------------------------------------*/
+a {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.8); }
+  a:link {
+    color: #ffa135;
+    text-decoration: none;
+    font-size: 1.2rem; }
+  a:visited {
+    color: #4295b1; }
+  a:hover {
+    color: rgba(255, 161, 53, 0.9);
+    font-size: 1.5rem;
+    transition-duration: 0.6s;
+    transition-timing-function: ease-out; }
+
+p:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  background-color: rgba(26, 26, 26, 0.808); }
+
+/* -------------------------------------------------------
+-------------------- Mobile Responsive ------------------- 
+---------------------------------------------------------*/
+@media only screen and (min-device-width: 200px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* ------------------ Index Page --------------------- */
+  .main-menu {
+    font-size: 1rem;
+    display: block;
+    line-height: 40px; }
+  .main-heading {
+    line-height: 1;
+    margin: 0px 0 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    animation: animate ease-out 2s; }
+  @keyframes animate {
+    from {
+      font-size: 0.2rem; }
+    to {
+      font-size: 3rem; } }
+  .main-title {
+    font-size: 1.6rem;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-top: 0px;
+    animation: animate2 ease-out 1s; }
+  @keyframes animate2 {
+    from {
+      font-size: 0.2rem; }
+    to {
+      font-size: 1.6rem; } }
+  .camp-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+    grid-template-areas: "header"; }
+
+  .hike-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+    grid-template-areas: "header2"; }
+
+  .canoe-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+    grid-template-areas: "header3"; }
+
+  .fish-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+    grid-template-areas: "header4"; }
+
+  .climb-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 5px;
+    grid-template-columns: 5fr;
+    grid-template-areas: "header5"; }
+
+  /* ------------------------- Gallery Page --------------------*/
+  .gallery {
+    background-image: linear-gradient(#141414, #3a3a3a, #6b6b6b);
+    padding: 10px; }
+
+  .container {
+    grid-gap: 5px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(25, 180px); }
+
+  .name {
+    grid-column: span 1;
+    text-align: center; }
+
+  .camp {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .camp2 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .camp3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .camp4 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .camp5 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .hike {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .hike2 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .hike3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .hike4 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .hike5 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .canoe {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .canoe2 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .canoe3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .canoe4 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .canoe5 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .fish {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .fish2 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .fish3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .fish4 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .fish5 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .climb {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .climb2 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .climb3 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .climb4 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  .climb5 {
+    grid-row: span 1;
+    grid-column: span 1; }
+
+  /* ----------------------- Contact Page --------------------*/
+  .gallery {
+    text-align: center;
+    background-size: cover;
+    padding: 10px; }
+
+  .contact-content {
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-areas: "header"; }
+
+  .contact {
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 10px; }
+
+  .heading {
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 162, 0, 0.603);
+    grid-area: header;
+    background-color: rgba(255, 162, 0, 0.603); }
+
+  .contact-heading {
+    display: grid;
+    grid-column: span 1; }
+
+  .footer {
+    grid-column: span 1; }
+
+  nav {
+    display: inline-block;
+    position: static; }
+
+  table {
+    padding-top: 20px;
+    font-size: 15px;
+    box-shadow: 0px 5px 8px #000;
+    padding: 20px;
+    border: none;
+    border-radius: 10px; }
+
+  iframe {
+    height: 340px;
+    width: 250px; } }
+/* -------------------------------------------------------
+-------------------- Tablet Responsive ------------------- 
+---------------------------------------------------------*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) and (-webkit-min-device-pixel-ratio: 1) {
+  /* ------------------ Index Page --------------------- */
+  .main-menu {
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 40px; }
+  .main-heading {
+    line-height: 1;
+    margin: 30px 0 0;
+    font-size: 3rem;
+    line-height: 1.1;
+    animation: animate ease-out 2s; }
+  @keyframes animate {
+    from {
+      font-size: 0.2rem; }
+    to {
+      font-size: 3rem; } }
+  .main-title {
+    font-size: 1.6rem;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-top: 30px;
+    text-decoration-style: none;
+    animation: animate2 ease-out 1s; }
+  @keyframes animate2 {
+    from {
+      font-size: 0.2rem; }
+    to {
+      font-size: 1.6rem; } }
+  .camp-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr; }
+
+  .hike-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr; }
+
+  .canoe-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr; }
+
+  .fish-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr; }
+
+  .climb-content {
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    margin-top: 0px;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: 10fr 10fr; }
+
+  /* ------------------ Contact Page --------------------- */
+  .contact-content {
+    padding: 20px;
+    grid-gap: 10px;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "header"; }
+
+  .heading {
+    text-align: center;
+    display: grid;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgba(255, 162, 0, 0.603);
+    grid-area: header;
+    background-color: rgba(255, 162, 0, 0.603);
+    grid-template-rows: span 1; }
+
+  .contact-heading {
+    text-align: center;
+    grid-column: span 1; }
+
+  .footer {
+    grid-column: span 1; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -114,6 +114,11 @@
   background-position: center;
   background-repeat: no-repeat; }
 
+.item:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  filter: brightness(130%); }
+
 .name {
   grid-column: span 4;
   text-align: center; }
@@ -295,11 +300,6 @@ p:hover {
   transition-timing-function: ease-in-out;
   transition-duration: 0.2s;
   background-color: rgba(26, 26, 26, 0.808); }
-
-img:hover {
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-  filter: brightness(130%); }
 
 /* -------------------------------------------------------
 -------------------- Mobile Responsive ------------------- 

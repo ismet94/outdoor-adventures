@@ -221,11 +221,6 @@ p:hover {
   transition-duration: 0.2s;
   background-color: rgba(26, 26, 26, 0.808); }
 
-img:hover {
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.2s;
-  filter: brightness(130%); }
-
 /* -------------------------------------------------------
 ----------------------- Index Page ----------------------- 
 ---------------------------------------------------------*/
@@ -338,6 +333,11 @@ img:hover {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
+
+.item:hover {
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.2s;
+  filter: brightness(130%); }
 
 .name {
   grid-column: span 4;

@@ -136,10 +136,3 @@ p:hover {
     background-color: rgba(26, 26, 26, 0.808);
 }
 
-
-// All image transitions and hovering
-img:hover {
-        transition-timing-function: ease-in-out;
-        transition-duration: 0.2s;
-        filter: brightness(130%);
-    }
