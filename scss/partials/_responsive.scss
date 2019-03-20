@@ -73,6 +73,23 @@ and (-webkit-min-device-pixel-ratio: 1) {
             "header5"
 }
 
+// This is the div class for the slider
+.slider {
+    position: relative;
+    width: 50%;
+}
+
+// the image placement
+.images {
+  width: 200%;
+}
+
+// This ensures that slider only appears on hover
+.slider:hover .overlay {
+  width: 200%;
+}
+
+
 /* ------------------------- Gallery Page --------------------*/
 
 .gallery {
@@ -318,6 +335,22 @@ iframe {
              to {font-size: 1.6rem;}
          }
      }
+}
+
+// This is the div class for the slider
+.slider {
+    position: relative;
+    width: 50%;
+}
+
+// the image placement
+.images {
+  width: 200%;
+}
+
+// This ensures that slider only appears on hover
+.slider:hover .overlay {
+  width: 200%;
 }
 
 .camp-content {

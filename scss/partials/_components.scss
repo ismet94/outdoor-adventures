@@ -48,23 +48,23 @@
         text-transform: uppercase;
         font-weight: normal;
         line-height: 1.3;
-        text-shadow: 0 5px 4px $color-shadow;
+        text-shadow: 1px 5px 5px $color-shadow;
         margin: 12px 0 0;
-        font-size: 5rem;
+        font-size: 4rem;
         line-height: 1.1;
         // an animation added to the heading
         animation: animate ease-out 2s;
 
         @keyframes animate {
             from {font-size: 0.2rem;}
-            to {font-size: 5rem;}
+            to {font-size: 4rem;}
         }
     }
 
     // titles properties
     &-title {
         color: $color-text-light;
-        font-family: 'Rock Salt', cursive;
+        font-family: 'Merriweather', serif;
         font-size: 1.625rem;
         letter-spacing: .065em;
         text-shadow: 0 5px 4px $color-shadow;

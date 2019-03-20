@@ -4,21 +4,21 @@
 
 // Each section has a grid template to even out the website
 // camping section
-.camp-content {
-    background-image:  url(../images/camping.jpg);
-    @include home-section;
-    grid-template-areas: 
-        "header header"
-}
-
 .heading {
     @include home-head;
     grid-area: header1;
 }
 
+.camp-content {
+    background-image: linear-gradient($home-section-gradient), url(../images/camping.jpg);
+    @include home-section;
+    grid-template-areas: 
+        "header header"
+}
+
 // hiking section
 .hike-content {
-    background-image: url(../images/hiking.jpg);
+    background-image: linear-gradient($home-section-gradient), url(../images/hiking.jpg);
     @include home-section;
     grid-template-areas: 
             "header2 header2"
@@ -31,7 +31,7 @@
 
 // canoeing section
 .canoe-content {
-    background-image: url(../images/canoeing.jpg);
+    background-image: linear-gradient($home-section-gradient), url(../images/canoeing.jpg);
     @include home-section;
     grid-template-areas: 
         "header3 header3"
@@ -44,7 +44,7 @@
 
 // fishing section
 .fish-content {
-    background-image: url(../images/fishing.jpg);
+    background-image: linear-gradient($home-section-gradient), url(../images/fishing.jpg);
     @include home-section;
     grid-template-areas: 
         "header4 header4"
@@ -57,7 +57,7 @@
 
 // climbing section
 .climb-content {
-    background-image: url(../images/climbing.jpg);
+    background-image: linear-gradient($home-section-gradient), url(../images/climbing.jpg);
     @include home-section;
     grid-template-areas: 
         "header5 header5"
@@ -66,6 +66,53 @@
 .heading5 {
     @include home-head;
     grid-area: header5;
+}
+
+// This is the div class for the slider
+.slider {
+    position: relative;
+    width: 50%;
+}
+
+// the image placement
+.images {
+  display: block;
+  width: 600px;
+  height: 100%;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+// This is the overlay that appears over the image
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $slider-gradient;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+// This ensures that slider only appears on hover
+.slider:hover .overlay {
+  width: 600px;
+  border-radius: 10px;
+}
+
+// This centers the text in the middle
+.see-more {
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 
@@ -203,3 +250,4 @@
 }
 
 /* ------------------ End of Contact Page ---------------------*/
+

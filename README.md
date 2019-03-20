@@ -127,6 +127,12 @@ Tools:
 - Began changes on the website for all the tweaks
 - Made Navbar consistent throughout the website
 
+2019-03-20 
+- Perfected Responsiveness
+- Done with headings
+- Adjusted contact form
+- Completed Checkboxes
+
 
 ## Contributors
 
