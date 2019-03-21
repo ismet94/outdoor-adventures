@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Suez+One|Maitree|Cutive" rel="stylesheet">
     <!-- Linked my stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Added link for effects -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Created appropriate title -->
     <title>Gallery</title>
 </head>
@@ -47,36 +49,36 @@
             <!-- The Grid class determined below -->
             <div class="container">
                 <!-- All images are then inserted below one another -->
-                <img class="item camp" id="camp" src="images/camp.jpg" alt="tweedetol-campsite">
-                <img class="item camp3" src="images/camp3.jpg" alt="tweedetol-dive">
-                <img class="item camp5" src="images/camp5.jpg" alt="tweedetol waterfall">
-                <img class="item camp4" src="images/camp4.jpg" alt="tweedetol river">
-                <img class="item camp2" src="images/camp2.jpg" alt="tweedetol-parking">
-                <img class="item hike" id="hike" src="images/hike.jpg" alt="tablemountain" >
-                <img class="item hike2" src="images/hike2.jpg" alt="tablemountain-peak" >
-                <img class="item hike4" src="images/hike4.jpg" alt="tablemountain-journey" >
-                <img class="item hike3" src="images/hike3.jpg" alt="tablemountain-balance" >
-                <img class="item hike5" src="images/hike5.jpg" alt="tablemountain-walk" >
-                <img class="item canoe" id="canoe" src="images/canoe.jpg" alt="canoeing" >
-                <img class="item canoe2" src="images/canoe2.jpg" alt="canoeing-sunset" >
-                <img class="item canoe5" src="images/canoe5.jpg" alt="canoeing- partner" >
-                <img class="item canoe4" src="images/canoe4.jpg" alt="canoeing-dolphins" >
-                <img class="item canoe3" src="images/canoe3.jpg" alt="canoeing-coast" >
-                <img class="item fish" id="fish" src="images/fish.jpg" alt="kalkbay" >
-                <img class="item fish2" src="images/fish2.jpg" alt="kalkbay-boat" >
-                <img class="item fish3" src="images/fish3.jpg" alt="kalkbay-shore" >
-                <img class="item fish4" src="images/fish4.jpg" alt="kalkbay-fishingboat" >
-                <img class="item fish5" src="images/fish5.jpg" alt="kalkbay-jetty" >
-                <img class="item climb" id="climb" src="images/climb.jpg" alt="Silvermine" >
-                <img class="item climb2" src="images/climb2.jpg" alt="silvermine-cablecar" >
-                <img class="item climb3" src="images/climb3.jpg" alt="silvermine-climb">
-                <img class="item climb4" src="images/climb4.jpg" alt="silvermine-equipment">
-                <img class="item climb5" src="images/climb5.jpg" alt="Silvermine-instructor">
+                <img class="item camp" data-aos="zoom-in" id="camp" src="images/camp.jpg" alt="tweedetol-campsite">
+                <img class="item camp3" data-aos="zoom-out" src="images/camp3.jpg" alt="tweedetol-dive">
+                <img class="item camp5" data-aos="zoom-in" src="images/camp5.jpg" alt="tweedetol waterfall">
+                <img class="item camp4" data-aos="zoom-out" src="images/camp4.jpg" alt="tweedetol river">
+                <img class="item camp2" data-aos="zoom-in" src="images/camp2.jpg" alt="tweedetol-parking">
+                <img class="item hike" data-aos="zoom-out" id="hike" src="images/hike.jpg" alt="tablemountain" >
+                <img class="item hike2" data-aos="zoom-in" src="images/hike2.jpg" alt="tablemountain-peak" >
+                <img class="item hike4" data-aos="zoom-out" src="images/hike4.jpg" alt="tablemountain-journey" >
+                <img class="item hike3" data-aos="zoom-in" src="images/hike3.jpg" alt="tablemountain-balance" >
+                <img class="item hike5" data-aos="zoom-out" src="images/hike5.jpg" alt="tablemountain-walk" >
+                <img class="item canoe" data-aos="zoom-in" id="canoe" src="images/canoe.jpg" alt="canoeing" >
+                <img class="item canoe2" data-aos="zoom-out" src="images/canoe2.jpg" alt="canoeing-sunset" >
+                <img class="item canoe5" data-aos="zoom-in" src="images/canoe5.jpg" alt="canoeing- partner" >
+                <img class="item canoe4" data-aos="zoom-out" src="images/canoe4.jpg" alt="canoeing-dolphins" >
+                <img class="item canoe3" data-aos="zoom-in" src="images/canoe3.jpg" alt="canoeing-coast" >
+                <img class="item fish" data-aos="zoom-out" id="fish" src="images/fish.jpg" alt="kalkbay" >
+                <img class="item fish2" data-aos="zoom-in" src="images/fish2.jpg" alt="kalkbay-boat" >
+                <img class="item fish3" data-aos="zoom-out" src="images/fish3.jpg" alt="kalkbay-shore" >
+                <img class="item fish4" data-aos="zoom-in" src="images/fish4.jpg" alt="kalkbay-fishingboat" >
+                <img class="item fish5" data-aos="zoom-out" src="images/fish5.jpg" alt="kalkbay-jetty" >
+                <img class="item climb" data-aos="zoom-in" id="climb" src="images/climb.jpg" alt="Silvermine" >
+                <img class="item climb2" data-aos="zoom-out" src="images/climb2.jpg" alt="silvermine-cablecar" >
+                <img class="item climb3" data-aos="zoom-in" src="images/climb3.jpg" alt="silvermine-climb">
+                <img class="item climb4" data-aos="zoom-out" src="images/climb4.jpg" alt="silvermine-equipment">
+                <img class="item climb5" data-aos="zoom-in" src="images/climb5.jpg" alt="Silvermine-instructor">
             </div>
             <!-- End of grid class -->
             
         <!-- Footer including back to top icon in png format-->
-        <footer >
+        <footer data-aos="fade-up">
             <p class="main-footer">
                 All rights reserved to the province of  WesternCape Designed by Ismet Samsodien - 2019 
             <!-- Image in a link to scroll to top -->    
@@ -86,5 +88,13 @@
             </p>
         </footer>  
     </section>
+
+    <!-- Scripting initialization for effects -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+        });
+    </script>
 </body>
 </html>

@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC|Suez+One|Maitree|Cutive" rel="stylesheet">
     <!-- Linked my stylesheet -->
     <link rel="stylesheet" href="css/main.css">
+    <!-- Added link for effects -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- Created appropriate title -->
     <title>Contact Us</title>
 </head>
@@ -52,7 +54,7 @@
         <!-- Added a table for the business details -->
         <div class="table1">
             <!-- Table size class added -->
-            <table class="table-size1">
+            <table class="table-size1" data-aos="slide-up">
                 <tbody>
                     <!-- Seconday heading added into table -->
                     <tr>
@@ -89,7 +91,7 @@
             <!-- Form added into Table -->
             <form action="">
                 <!-- Table size class added -->
-                <table class="table-size1">
+                <table class="table-size1" data-aos="slide-down">
                     <tbody>
                         <!-- Seconday heading added into table -->
                         <tr>
@@ -135,7 +137,7 @@
   
 
       <!-- Footer including back to top icon in png format-->
-        <footer class="contact-footer">
+        <footer class="contact-footer" data-aos="fade-up">
             <p class="main-footer">
                 All rights reserved to the province of  Western Cape Designed by Ismet Samsodien - 2019 
             <!-- Image in a link to scroll to top -->
@@ -145,5 +147,13 @@
             </p>
         </footer>
     </section>
+
+    <!-- Scripting initialization for effects -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration:800,
+        });
+    </script>
 </body>
 </html>
