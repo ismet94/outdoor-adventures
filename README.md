@@ -1,8 +1,10 @@
 # outdoor-adventures
 
-Outdoor Adventures Cape Town is aimed at main destination locations in and around the Western Cape Province. Local is lekker so to keep it here other than overseas destinations made me choose my colour scheme. A more African themed website helped me to colour and style my website.
+Outdoor Adventures Cape Town is aimed at main destination locations in and around the Western Cape Province. Local is lekker so to keep it here other than overseas destinations this significantly made me choose my colour scheme for the website. A more African themed website helped me to colour and style my website.
 
-The task was given in a short period of time in order to challenge us to complete the same as in a working enviroment. The more challenging part was implementing sass into the website as this
+The task was given in a short period of time in order to challenge us to complete the same as in a working enviroment. The more challenging part was implementing sass into the website as this is the more modern way of creating a website. In the end making my website was a nice stepping stone to better my skills. Here I incorporated mixins and variables to my website so that each attribute of using sass is implemented.
+
+Responsiveness took some time but the grid layout helped me overcome that in the contact page. I later realised that the whole website could work with the grid layout but furthermore i shall persue this in my next project. 
 
 
 ## Setting up my workspace
@@ -133,6 +135,11 @@ Tools:
 - Adjusted contact form
 - Completed Checkboxes
 
+2019-03-21
+- Added addtional comments
+- Created alternative text to be implemented for images when using the Search Engine Optimization
+- Added effects to website
+- Updated Readme
 
 ## Contributors
 
