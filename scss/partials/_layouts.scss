@@ -3,7 +3,7 @@
 ---------------------------------------------------------*/
 
 // Each section has a grid template to even out the website
-// camping section
+// camping section content properties mixins included 
 .heading {
     @include home-head;
     grid-area: header1;
@@ -16,7 +16,11 @@
         "header header"
 }
 
-// hiking section
+// Hiking section content properties mixins included  
+.heading2 {
+    @include home-head;
+    grid-area: header2;
+}
 .hike-content {
     background-image: linear-gradient($home-section-gradient), url(../images/hiking.jpg);
     @include home-section;
@@ -24,12 +28,11 @@
             "header2 header2"
 }
 
-.heading2 {
+// Canoeing section content properties mixins included 
+.heading3 {
     @include home-head;
-    grid-area: header2;
+    grid-area: header3;
 }
-
-// canoeing section
 .canoe-content {
     background-image: linear-gradient($home-section-gradient), url(../images/canoeing.jpg);
     @include home-section;
@@ -37,12 +40,11 @@
         "header3 header3"
 }
 
-.heading3 {
+// Fishing section content properties mixins included 
+.heading4 {
     @include home-head;
-    grid-area: header3;
+    grid-area: header4;
 }
-
-// fishing section
 .fish-content {
     background-image: linear-gradient($home-section-gradient), url(../images/fishing.jpg);
     @include home-section;
@@ -50,12 +52,11 @@
         "header4 header4"
 }
 
-.heading4 {
+// Climbing section content properties mixins included 
+.heading5 {
     @include home-head;
-    grid-area: header4;
+    grid-area: header5;
 }
-
-// climbing section
 .climb-content {
     background-image: linear-gradient($home-section-gradient), url(../images/climbing.jpg);
     @include home-section;
@@ -63,10 +64,6 @@
         "header5 header5"
 }
 
-.heading5 {
-    @include home-head;
-    grid-area: header5;
-}
 
 // This is the div class for the slider
 .slider {
@@ -74,7 +71,7 @@
     width: 50%;
 }
 
-// the image placement
+// the image placement in the index.html for each section
 .images {
   display: block;
   width: 600px;
@@ -124,6 +121,7 @@
 .container {
     display: grid;
     grid-gap: 10px;
+    padding-top: 2%;
     grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(10,290px);
 }
@@ -140,81 +138,59 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-
+// Once hovered the image will brighten and expand
 .item:hover {
         transition-timing-function: ease-in-out;
         transition-duration: 0.2s;
         filter: brightness(130%);
-    }
-
-
-// the name class for the totop
-.name {
-    grid-column: span 4;
-    text-align: center;
 }
 
-// below is where only certain images are spaned across a column or a row
+// below is where only certain images are spaned across a column or a row this helps to create a masonry gallery
 .camp1 {
     grid-column: span 2;
 }
-
 .camp3 {
     grid-column: span 2;
 }
-
 .camp4 {
     grid-column: span 2;
 }
-
 .camp5 {
     grid-row: span 2;
 }
-
 .hike2 {
     grid-column: span 2;
 }
-
 .hike4 {
     grid-row: span 2;
 }
-
 .hike5 {
     grid-column: span 2;
 }
-
 .canoe2 {
     grid-column: span 2;
 }
-
 .canoe4 {
     grid-column: span 2;
 }
-
 .canoe5 {
     grid-row: span 2;
 }
-
 .fish2 {
     grid-column: span 2;
 }
-
 .fish3 {
     grid-row: span 2;
 }
-
 .fish4 {
     grid-column: span 2;
 }
-
 .climb {
     grid-column: span 2;
 }
-
 .climb3 {
     grid-row: span 2;
 }
-
 .climb5 {
     grid-column: span 2;
 }
@@ -224,6 +200,7 @@
 ---------------------- Contact Page ---------------------- 
 ---------------------------------------------------------*/
 
+// This sets the grid for the table
 .contact-content {
     display: grid;
     margin-top: 0px;
@@ -234,19 +211,66 @@
         "header header"
 }
 
+// This ensures that the whole page is set in a grid layout
+.contact-grid {
+        display: grid;
+        width: 100%;
+        padding: 2%;
+        padding-left: 30%;
+        text-align: center;
+    
+        /* grid columns and rows size */
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-gap: 100px;
+        
+        //Grid layout set for the page 
+        grid-template-areas: 
+                "contacthead contacthead"
+                "table1 table2"
+                "footer1 footer1"
+    }
+
+// This sizes the main heading in the contact page
 .heading {
     @include home-head;
     grid-area: header;
     background-color: $heading-back;
 }
-
 .contact-heading {
     text-align: center;
     grid-column: span 2;
 }
 
-.footer {
-    grid-column: span 2;
+// This sizes the grid heaing
+.contact-heading-grid {
+    grid-area: contacthead;
+    width: 100%;
+    margin-left: 200px;
+}
+// This adjusts the table sizes
+.table-size1 {
+    width: 550px;
+    height: 700px;
+}
+.table-size2 {
+    width: 550px;
+    height: 700px;
+// This tells where the tables are set in the grid 
+}
+.table1 {
+    width: 500px;
+    grid-area: table1;
+}
+.table2 {
+    width: 200px;
+    grid-area: table2;
+    align-items: center;
+}
+// Sizing for the footer only for the contact page
+.contact-footer {
+    width:1140px;
+    grid-area: footer1;
 }
 
 /* ------------------ End of Contact Page ---------------------*/

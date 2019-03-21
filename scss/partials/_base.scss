@@ -19,33 +19,33 @@ body {
 // navbar includes styling and positioning of the website
 nav {
     background-color: rgba(0, 0, 0, 0.473);
-    font-family: 'Merriweather', serif;
+    font-family: 'Maitree', serif;
     position: fixed;
     top: 0px; 
     width: 100%; 
     transition: top 0.3s; 
     border-radius: 10px;
     text-align: center;
+    z-index: 99;
 }
 
 // each ul tag in the navbar is spaced out and position
 ul {
+    font-size: 1.25rem;
     text-align: center;
     display: inline;
-    padding: 40px;
+    padding: 50px;
 }
 
 // different headings used to style the website
 h1 {
-    font-size: 2.15rem;
-    font-family: 'Suez One', serif;
-    text-shadow: 1px 2px 1px black;
+    font-size: 2.55rem;
+    font-family: 'Cutive', serif;
+    text-shadow: 1px 1px 1px black;
 }
-
 h2 {
-    font-family: 'Suez One', serif;
+    font-family: 'Cutive', serif;
 }
-
 h3 {
     font-size: 1.25em;
     color: $color-text-dark;
@@ -57,7 +57,7 @@ h3 {
 p {
     color: $color-text-light;
     padding: 20px;
-    background-color: rgba(26, 26, 26, 0.685);
+    background-color: rgba(26, 26, 26, 0.795);
     border-radius: 10px;
 }
 
@@ -85,25 +85,25 @@ select, option, input {
     background-color: rgba(0, 0, 0, 0.493);
     color: $yellow-orange;
     border: none;
-    text-indent: 9px;
     border-radius: 5px;
     box-shadow: 0px 2px 3px black;
+    padding: 5%;
     width: 300px;
     height: 40px;
     margin: 5px;
 }
 
+// This ensures the the text area is poistioned, sized and styled correctly
 textarea {
     background-color: rgba(0, 0, 0, 0.493);
     color: $yellow-orange;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
     border: none;
+    width: 300px;
+    padding: 3%;
     border-radius: 5px;
     box-shadow: 0px 2px 3px black;
-    width: 300px;
-    margin-left: 6px;
-    padding: 1%;
-    text-indent: 9px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 
@@ -114,23 +114,19 @@ textarea {
 // links styled with the hover and visited styles
 a {
     text-shadow: 0 3px 3px $color-shadow;
-
     &:link {
         color: $color-link-default;
         text-decoration: none;
         font-size: 1.2rem;
     }
-
     &:visited {
         color: $color-link-visited;
     }
-
     &:hover {
         color: rgba($color-link-default, .9);
         font-size: 1.5rem;
         transition-duration: 0.6s;
         transition-timing-function: ease-out;
-        filter: brightness(125%);
     }
 }
 
@@ -140,3 +136,5 @@ p:hover {
     transition-duration: 0.2s;
     background-color: rgba(26, 26, 26, 0.808);
 }
+
+

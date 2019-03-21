@@ -9,31 +9,48 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 /* ------------------ Index Page --------------------- */
 
+.main-header {
+    padding: 0px;
+}
+
+// Changed my padding and margin to 0px to fit page
+nav {
+    margin: 0px;
+    padding: 0px;       
+}
+// Adjusted ul settings
+ul {
+    padding: 0px;
+    flex-direction: row;
+}
+
+// Adjusted the Main Heading and sub-heaing to desired feel
 .main {
     &-menu {
         font-size: 1rem;
         display: block;
         line-height: 40px;
     }
-
     &-heading {
         line-height: 1;
         margin: 0px 0 0;
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1.1;
         animation: animate ease-out 2s;
 
         @keyframes animate {
             from {font-size: 0.2rem;}
-            to {font-size: 3rem;}
+            to {font-size: 2.5rem;}
         }
     }
-
     &-title {
         font-size: 1.6rem;
         font-weight: 200;
         border-bottom: 2px solid;
         padding-top: 0px;
+        text-decoration: none;
+        list-style: none;
+        border: none;
         // an animation added to the title
         animation: animate2 ease-out 1s;
 
@@ -43,18 +60,18 @@ and (-webkit-min-device-pixel-ratio: 1) {
         }
     }
 }
+
+// index.html content now falls under each other
 .camp-content {
     @include home-cell;
     grid-template-areas: 
         "header"
 }
-    
 .hike-content {
     @include home-cell;
     grid-template-areas: 
-            "header2"
+        "header2"
 }
-
 .canoe-content {
     @include home-cell;
     grid-template-areas: 
@@ -66,7 +83,6 @@ and (-webkit-min-device-pixel-ratio: 1) {
     grid-template-areas: 
         "header4"
 }
-
 .climb-content {
     @include home-cell;
         grid-template-areas: 
@@ -79,7 +95,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
     width: 50%;
 }
 
-// the image placement
+// the image placement (resized)
 .images {
   width: 200%;
 }
@@ -92,155 +108,64 @@ and (-webkit-min-device-pixel-ratio: 1) {
 
 /* ------------------------- Gallery Page --------------------*/
 
+// Changed the gallery size padding
 .gallery {
     background-image: linear-gradient($gallery-page-gradient);
-    padding: 10px;
-}
-
-.container {
-    grid-gap: 5px;
-    grid-template-columns: repeat(1,1fr);
-    grid-template-rows: repeat(25,180px);
-}
-
-.name {
-    grid-column: span 1;
-    text-align: center;
-}
-
-.camp   {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.camp2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.camp3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.camp4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.camp5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.hike    {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.hike2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.hike3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.hike4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.hike5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.canoe   {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.canoe2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.canoe3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.canoe4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.canoe5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.fish     {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.fish2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.fish3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.fish4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.fish5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.climb    {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.climb2 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.climb3 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.climb4 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-.climb5 {
-    grid-row: span 1;
-    grid-column: span 1;
-}
-
-/* ----------------------- Contact Page --------------------*/
-
-.gallery {
     text-align: center;
     background-size: cover;
     padding: 10px;
 }
 
+// The container below now changes all the images to block so that it falls under one another
+.container {
+    display: block;
+    grid-gap: 5px;
+    padding-top: 3.5%;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(25,180px);
+}
+
+/* ----------------------- Contact Page --------------------*/
+
+// Converted my grid columns to one so that the content postitions itslef under each under
+.contact-grid {
+    // Removed padding to 0%
+    padding-left: 0%;
+
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    
+    // grid layout 
+    grid-template-areas: 
+            "contacthead"
+            "table1"
+            "table2"
+            "footer1"
+}
+
+// This ensures that the contact form fits the resolution
+.contact-heading-grid {
+    width: 100%;
+    margin-left: 10px;
+}
+.table-size1 {
+    width: 100%;
+}
+.table-size2 {
+    width: 100%;
+}
+.table1 {
+    width: 100%;
+}
+.table2 {
+    width: 100%;
+}
+.contact-footer {
+    width: 100%;
+}
+
+// Ensures that the content stays accross the width
 .contact-content {
     padding: 10px;
     grid-gap: 10px;
@@ -248,33 +173,30 @@ and (-webkit-min-device-pixel-ratio: 1) {
     grid-template-areas: 
         "header"
 }
-
 .contact {
     background-size: cover;
     background-attachment: fixed;
     padding: 10px;
 }
+// Ensures that the heading stays accross the width
 
 .heading {
     @include home-head;
     grid-area: header;
     background-color: $heading-back;
 }
-
 .contact-heading {
     display: grid;
     grid-column: span 1;
 }
 
-.footer {
-    grid-column: span 1;
-}
-
+// Changed my Nav display settings and made the position static 
 nav {
     display: inline-block;
     position: static;
 }
 
+// Adjusted my tables sizing and padding
 table {
     padding-top: 20px;
     font-size: 15px;
@@ -284,9 +206,15 @@ table {
     border-radius: 10px;
 }
 
+// This makes sure that the google maps stay as large as possible
 iframe {
     height: 340px;
-    width: 250px;
+    width: 100%;
+}
+
+// Changed my footer padding to fit page
+.main-footer {
+    padding: 35px;
 }
 }
 
@@ -296,11 +224,13 @@ iframe {
 
 @media only screen 
   and (min-device-width: 768px) 
-  and (max-device-width: 1023px) 
+  and (max-device-width: 1123px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
 /* ------------------ Index Page --------------------- */
 
+
+// This ensures that my headings and sub-headings are sized and positioned correctly
 .main {
     &-menu {
         font-size: 1rem;
@@ -325,7 +255,8 @@ iframe {
          font-size: 1.6rem;
          font-weight: 200;
          border-bottom: 2px solid;
-         padding-top: 30px;
+         padding-top: 20%;
+         border: none;
          text-decoration-style: none;
          // an animation added to the title
          animation: animate2 ease-out 1s;
@@ -343,9 +274,11 @@ iframe {
     width: 50%;
 }
 
-// the image placement
+// Resized image to make it not looked stretched
 .images {
-  width: 200%;
+    padding-top: 100px;
+    width: 200%;
+    height: 500px;
 }
 
 // This ensures that slider only appears on hover
@@ -356,25 +289,64 @@ iframe {
 .camp-content {
     @include home-tab;
 }
-
 .hike-content {
     @include home-tab;
 }
-
 .canoe-content {
     @include home-tab;
 }
-
 .fish-content {
     @include home-tab;
 }
-
 .climb-content {
     @include home-tab;
 }
 
+.container {
+    padding-top: 2%;
+}
+
 /* ------------------ Contact Page --------------------- */
 
+// Changed my grid layout to fit resolution
+.contact-grid {
+    // Removed padding to 0%
+    padding-left: 0%;
+
+    /* grid columns and rows size */
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    
+    // grid layout 
+    grid-template-areas: 
+            "contacthead"
+            "table1"
+            "table2"
+            "footer1"
+}
+
+// This ensures that each table has the full width of the current resolution
+.contact-heading-grid {
+    width: 100%;
+    margin-left: 10px;
+}
+.table-size1 {
+    width: 100%;
+}
+.table-size2 {
+    width: 100%;
+}
+.table1 {
+    width: 100%;
+}
+.table2 {
+    width: 100%;
+}
+.contact-footer {
+    width: 100%;
+}
+
+// Ensures that the content stays accross the width
 .contact-content {
     padding: 20px;
     grid-gap: 10px;
@@ -382,9 +354,9 @@ iframe {
     grid-template-rows: auto;
     grid-template-areas: 
         "header"
-    
 }
 
+// Ensures that the heading stays accross the width
 .heading {
     text-align: center;
     display: grid;
@@ -393,14 +365,25 @@ iframe {
     background-color: $heading-back;
     grid-template-rows: span 1;
 }
-
 .contact-heading {
     text-align: center;
     grid-column: span 1;
 }
-
-.footer {
-    grid-column: span 1;
 }
 
+/* -------------------------------------------------------
+----------------- Contact page fix Responsive ------------ 
+---------------------------------------------------------*/
+
+// This helps the contact form fit the screen
+@media only screen 
+  and (min-device-width: 1124px) 
+  and (max-device-width: 1723px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  
+    .contact-grid {
+        // Removed padding to 0%
+        padding-left: 5%;
+        grid-gap: 100px;
+    }
 }
